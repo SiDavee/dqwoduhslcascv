@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Error Codes | TechFix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="globalstyles.css">
+    <link rel="stylesheet" href="errorcodes.css">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="nav-left">
+            <a href="PCHelp.html" class="home-btn-nav">
+                <i class="fa-solid fa-arrow-left"></i>
+                BACK
+            </a>
+            <a href="home.html" class="logo-text">Tech<span>Fix</span></a>
+        </div>
+        
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="PCHelp.html">PC Help</a>
+            <a href="toolsandguides.html">Tools & Guides</a>
+            <a href="contactus.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="diagnostic-content">
+            <div class="header-group">
+                <i class="fa-solid fa-triangle-exclamation main-icon"></i>
+                <h1>Windows Error Codes & BSOD</h1>
+                <p class="subtitle">Quickly decode Blue Screen errors and system failures.</p>
+            </div>
+
+            <div class="guide-card">
+                <ol class="step-list">
+                    <li>
+                        <strong>1. Identify the Stop Code</strong>
+                        <p>Locate the "Stop Code" at the bottom of the Blue Screen. Common codes include <span class="code-snippet">CRITICAL_PROCESS_DIED</span> or <span class="code-snippet">MEMORY_MANAGEMENT</span>.</p>
+                        <img src="stopcode.jpg" alt="Windows Stop Code" class="step-image">
+                    </li>
+
+                    <li>
+                        <strong>2. Analyze Recent Changes</strong>
+                        <p>Ask yourself: Did I just install a new app or update a driver? Most errors are triggered by recent software changes or hardware additions.</p>
+                        <img src="changes.png" alt="Recent Changes" class="step-image">
+                    </li>
+
+                    <li>
+                        <strong>3. Manage Device Drivers</strong>
+                        <p>Right-click <b>Start</b> > <b>Device Manager</b>. Look for yellow warning icons on components, then perform updates or rollbacks.</p>
+                        <img src="devicemanager.png" alt="Device Manager" class="step-image">
+                    </li>
+
+                    <li>
+                        <strong>4. Run System File Checker (SFC)</strong>
+                        <p>Repair corrupted Windows system files. Open <b>Command Prompt (Admin)</b> and type:</p>
+                        <span class="code-snippet">sfc /scannow</span>
+                        <img src="scan.jpg" alt="SFC Scan" class="step-image">
+                    </li>
+
+                    <li>
+                        <strong>5. Verify Hardware Health</strong>
+                        <p>Rule out physical failure. Run a disk check by typing this in <b>Command Prompt (Admin)</b>:</p>
+                        <span class="code-snippet">chkdsk C: /f /r</span>
+                        <img src="hardware health.jpg" alt="Hardware Health Check" class="step-image">
+                    </li>
+
+                    <li>
+                        <strong>6. Utilize System Restore</strong>
+                        <p>Revert your PC to a stable state without losing personal files by selecting a restore point from before the errors began.</p>
+                        <img src="systemrestore.png" alt="System Restore" class="step-image">
+                    </li>
+                </ol>
+            </div>
+
+            <div class="guide-card mt-4">
+                <h2>Common Windows Stop Codes</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Stop Code</th>
+                            <th>Meaning</th>
+                            <th>Suggested Fix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CRITICAL_PROCESS_DIED</td>
+                            <td>Vital system process stopped</td>
+                            <td>Run SFC /scannow</td>
+                        </tr>
+                        <tr>
+                            <td>MEMORY_MANAGEMENT</td>
+                            <td>RAM hardware or driver issue</td>
+                            <td>Reseat RAM sticks</td>
+                        </tr>
+                        <tr>
+                            <td>WHEA_UNCORRECTABLE_ERROR</td>
+                            <td>Hardware failure detected</td>
+                            <td>Check CPU/GPU cooling</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Site Map</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="PCHelp.html">PC Help</a></li>
+                    <li><a href="toolsandguides.html">Tools & Guides</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Developer Details</h3>
+                <p><strong>Name:</strong> Dave Matthew Capistrano Discutido</p>
+                <p><strong>Course:</strong> ITS121L bm14 | SY 2025-2026</p>
+                <p>Mapúa University</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechFix. Academic Project Only.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

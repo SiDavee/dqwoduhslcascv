@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Identification | TechFix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="component.css">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="nav-left">
+            <a href="toolsandguides.html" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i>
+               BACK TO TOOLS
+            </a>
+            <a href="home.html" class="logo-text">Tech<span>Fix</span></a>
+        </div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="PCHelp.html">PC Help</a>
+            <a href="toolsandguides.html" class="active">Tools & Guides</a>
+            <a href="contactus.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="header-group">
+            <i class="fa-solid fa-microchip main-icon"></i>
+            <h1>Component Identification</h1>
+            <p class="subtitle">A visual and detailed guide to core computer hardware.</p>
+        </div>
+
+        <div class="guide-card">
+            <h2 class="card-heading">Interactive Motherboard Map</h2>
+            <p class="card-text">Click the specific parts on the image to view their assembly steps.</p>
+            
+            <div class="map-container">
+                <img src="motherboard.jpg" usemap="#component-map" class="map-image" alt="Motherboard Map">
+                <map name="component-map">
+                    <area shape="rect" coords="300,100,500,300" alt="CPU" href="assembly.html">
+                    <area shape="rect" coords="550,50,650,400" alt="RAM" href="assembly.html">
+                    <area shape="rect" coords="50,450,500,550" alt="PCIe" href="assembly.html">
+                </map>
+            </div>
+            
+            <hr class="divider">
+
+            <h2 class="card-heading">Core Hardware Components</h2>
+            <ul class="step-list">
+                <li>
+                    <div class="step-header">
+                        <span class="step-number">1</span>
+                        <strong class="component-title">Central Processing Unit (CPU)</strong>
+                    </div>
+                    <p class="card-text">The "brain" of the computer that executes instructions. It generates significant heat and requires a dedicated cooler.</p>
+                    <img src="cpu.jpg" alt="CPU Processor" class="step-image">
+                </li>
+
+                <li>
+                    <div class="step-header">
+                        <span class="step-number">2</span>
+                        <strong class="component-title">Random Access Memory (RAM)</strong>
+                    </div>
+                    <p class="card-text">Short-term data storage for active tasks. Higher RAM capacity allows for smoother multitasking and gaming performance.</p>
+                    <img src="ram.jpg" alt="RAM Sticks" class="step-image">
+                </li>
+
+                <li>
+                    <div class="step-header">
+                        <span class="step-number">3</span>
+                        <strong class="component-title">Graphics Processing Unit (GPU)</strong>
+                    </div>
+                    <p class="card-text">Handles visual rendering and high-performance calculations. Essential for gaming, video editing, and 3D modeling.</p>
+                    <img src="gpu.png" alt="Graphics Card" class="step-image">
+                </li>
+
+                <li>
+                    <div class="step-header">
+                        <span class="step-number">4</span>
+                        <strong class="component-title">Storage (SSD/HDD)</strong>
+                    </div>
+                    <p class="card-text">Permanent storage for your files. NVMe SSDs are the current standard for high-speed boot times and data access.</p>
+                    <img src="storage.jpg" alt="Storage Drive" class="step-image">
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>SITE MAP</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="PCHelp.html">PC Help</a></li>
+                    <li><a href="toolsandguides.html">Tools & Guides</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>DEVELOPER DETAILS</h3>
+                <p><strong>Name:</strong> Dave Matthew Capistrano Discutido</p>
+                <p><strong>Course:</strong> ITS121L bm14 | SY 2025-2026</p>
+                <p>Mapúa University</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechFix. Academic Project Only.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

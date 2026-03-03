@@ -1,0 +1,213 @@
+body {
+    background-color: #0b5e6a;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+.main-nav {
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    height: 100%;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.2s;
+    border-right: 1px solid #444;
+}
+
+.back-link:hover {
+    background-color: #088395;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.logo-text span {
+    color: #088395;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #088395;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.guide-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: left;
+    color: #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    max-width: 850px;
+}
+
+.guide-card::before {
+    content: "PRO-DIAGNOSTIC";
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background: #088395;
+    color: white;
+    padding: 5px 40px;
+    font-size: 10px;
+    font-weight: bold;
+    transform: rotate(45deg);
+}
+
+.step-list {
+    list-style: none;
+    counter-reset: step-counter;
+    padding: 0;
+}
+
+.step-list li {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 50px;
+}
+
+.step-list li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0; 
+    top: 0;
+    width: 35px; 
+    height: 35px;
+    background: #088395;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.step-image {
+    display: block;
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.main-footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 50px 20px 20px 20px;
+    width: 100%;
+    margin-top: 60px;
+    box-sizing: border-box;
+}
+
+.footer-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-section h3 {
+    color: #088395;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.header-group {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.main-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,295 @@
+/* Universal Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main-nav {
+    width: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 40px; /* Changed from 0 40px 0 0 to add the left space */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0b5e6a;
+    /* This restores the Grid Pattern from image_64d0f2 */
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flush Header Fix */
+.main-nav {
+    width: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding-right: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.home-btn-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #333636 !important;
+    color: white !important;
+    text-decoration: none !important;
+    padding: 0 30px;
+    height: 100%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.logo-text span { color: #088395; }
+
+/* Teal Container Box from image_64ccf4 */
+.content-box {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #114c55; /* Teal background for the content card */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px auto;
+}
+
+.header-group h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Steps and Overlap Fix */
+.guide-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.step-list li {
+    display: block;
+    clear: both;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 50px;
+}
+
+.step-image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Flush Footer */
+.main-footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 50px 20px 20px 20px;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Universal Reset to fix gaps and spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0b5e6a;
+    /* Restores the specific Grid Pattern seen in image_64d0f2 */
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fix for the Header Links (Removes blue/purple and underlines) */
+.nav-links a {
+    color: #bbb !important; /* Matches gray links in image_64d0f2 */
+    text-decoration: none !important;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #088395 !important; /* Teal hover state */
+}
+
+/* Restores the Teal HOME Button look from image_64019e */
+.home-btn-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #088395; /* High-contrast teal background */
+    color: white !important;
+    text-decoration: none !important;
+    padding: 0 30px;
+    height: 100%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Restores the Teal Grid Container from image_64ccf4 */
+.content-box {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #114c55; /* Matches the dark teal card */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px auto;
+}
+
+/* Ensure images do not overlap and have the professional border */
+.step-image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+/* Universal Reset and Grid Background */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0b5e6a;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Spacing Fix */
+.main-nav {
+    width: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 40px; /* Restores 40px side spacing */
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Grey to Teal Hover Fix */
+.home-btn-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #333333 !important; /* Default Grey */
+    color: white !important;
+    text-decoration: none !important;
+    padding: 0 30px;
+    height: 100%;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn-nav:hover {
+    background-color: #088395 !important; /* Teal on Hover */
+}
+
+/* Rest of the styles */
+.logo-text { color: #ffffff; font-size: 1.5rem; font-weight: bold; text-decoration: none; margin-left: 20px; }
+.logo-text span { color: #088395; }
+
+.nav-links a { color: #bbb !important; text-decoration: none !important; font-size: 0.9rem; margin-left: 25px; }
+.nav-links a:hover { color: #088395 !important; }
+
+/* Teal Content Box */
+.content-box {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #114c55;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px auto;
+}
+
+.header-group { text-align: center; color: white; margin-bottom: 30px; }
+
+/* Guide Content */
+.guide-card { background-color: white; border-radius: 15px; padding: 30px; color: #333; }
+.step-list li { display: block; clear: both; margin-bottom: 50px; }
+.step-image { display: block; width: 100%; max-width: 600px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+
+/* Mandatory Footer */
+.main-footer { background-color: #1a1a1a; color: #ffffff; padding: 50px 20px 20px 20px; width: 100%; margin-top: auto; }
+.footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.footer-section h3 { color: #088395; margin-bottom: 20px; font-size: 1.2rem; }
+.footer-section ul { list-style: none; }
+.footer-section a { color: #bbb; text-decoration: none; }
+.footer-bottom { text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px; font-size: 0.85rem; }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Troubleshooting Checklist | TechFix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="diagnostic.css">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="nav-left">
+            <a href="PCHelp.html" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back
+            </a>
+            <a href="home.html" class="logo-text">Tech<span>Fix</span></a>
+        </div>
+        
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="PCHelp.html">PC Help</a>
+            <a href="toolsandguides.html">Tools & Guides</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="diagnostic-content">
+            <div class="header-group">
+                <i class="fa-solid fa-tools main-icon"></i>
+                <h1>Hardware Troubleshooting Checklist</h1>
+                <p class="subtitle">Follow these steps to identify and resolve physical hardware failures.</p>
+            </div>
+
+            <div class="guide-card">
+                <ol class="step-list">
+                    <li>
+                        <strong>1. Power & Exterior Connections</strong>
+                        <p>Verify the power cable is seated firmly. Test the wall outlet with another device. Ensure monitor cables (HDMI/DisplayPort) are connected to the GPU, not the motherboard.</p>
+                        <img src="hdmi.png" alt="HDMI Connection" class="step-image">
+                    </li>
+
+                    <li>
+                        <strong>2. The "POST" Test (Beep Codes)</strong>
+                        <p>Listen for motherboard beeps. A single beep usually indicates a successful POST. Repeated or long beeps signify specific RAM or GPU failures.</p>
+                        <img src="beep.jpg" alt="Motherboard Speaker" class="step-image">
+                    </li>
+
+                    <li>
+                        <strong>3. Internal Visual Inspection</strong>
+                        <p>Power off and unplug the PC. Open the side panel. Check for loose RAM sticks, unplugged PCIe cables, or dust buildup in fans.</p>
+                        <img src="visual.png" alt="Internal PC Inspection" class="step-image">
+                    </li>
+
+                    <li>
+                        <strong>4. CMOS Reset</strong>
+                        <p>Remove the silver coin-shaped battery (CR2032) for 30 seconds, then reinsert. This resets BIOS settings to factory defaults.</p>
+                        <img src="cmos.png" alt="CMOS Battery" class="step-image">
+                    </li>
+
+                    <li>
+                        <strong>5. Minimal Boot Configuration</strong>
+                        <p>Disconnect everything except the Motherboard, CPU, and one stick of RAM. If it boots, add components back one by one to find the culprit.</p>
+                        <img src="boot.jpg" alt="Minimal Boot Setup" class="step-image">
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Site Map</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="PCHelp.html">PC Help</a></li>
+                    <li><a href="toolsandguides.html">Tools & Guides</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Developer Details</h3>
+                <p><strong>Name:</strong> Dave Matthew Capistrano Discutido</p>
+                <p><strong>Course:</strong> ITS121L | SY 2025-2026</p>
+                <p>Section: [Your Section]</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechFix. Academic Project Only.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
