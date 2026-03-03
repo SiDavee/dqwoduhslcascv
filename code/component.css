@@ -1,0 +1,294 @@
+/* Navigation Design Restored */
+.main-nav {
+    width: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.map-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.map-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+
+area { cursor: pointer; }
+
+/* Restored High-Contrast Text */
+.card-heading {
+    color: #0b5e6a !important;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #088395;
+    padding-bottom: 10px;
+}
+
+.card-text {
+    color: #333333 !important;
+    line-height: 1.6;
+}
+
+/* Fix for overlapping images */
+.step-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.step-list li {
+    margin-bottom: 60px;
+    display: block;
+    clear: both; /* Prevents images from stacking/overlapping */
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.step-number {
+    background-color: #088395;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.component-title {
+    color: #088395;
+    font-size: 1.4rem;
+}
+.map-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.map-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+
+area { cursor: pointer; }
+
+/* Restored High-Contrast Text */
+.card-heading {
+    color: #0b5e6a !important;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #088395;
+    padding-bottom: 10px;
+}
+
+.card-text {
+    color: #333333 !important;
+    line-height: 1.6;
+}
+
+/* Fix for overlapping images */
+.step-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.step-list li {
+    margin-bottom: 60px;
+    display: block;
+    clear: both; /* Prevents images from stacking/overlapping */
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Navigation Links Styling */
+.nav-links a {
+    color: #ffffff !important; /* Forces text to be white */
+    text-decoration: none !important; /* Removes the underline */
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover state to match your teal theme */
+.nav-links a:hover {
+    color: #088395 !important;
+    text-decoration: none;
+}
+
+/* Visited state fix (prevents links from turning purple) */
+.nav-links a:visited {
+    color: #ffffff;
+}
+
+.step-number {
+    background-color: #088395;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.component-title {
+    color: #088395;
+    font-size: 1.4rem;
+}
+
+.step-image {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.divider {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+.step-image {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.divider {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 0 25px;
+    height: 100%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-right: 1px solid #444;
+}
+
+.back-link:hover {
+    background-color: #088395;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.logo-text span { color: #088395; }
+
+/* Visibility Fix for Component Page */
+.card-heading {
+    color: #0b5e6a !important;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #088395;
+    padding-bottom: 10px;
+}
+
+.card-text {
+    color: #333333 !important;
+    line-height: 1.6;
+}
+
+/* Step Layout Restored */
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.step-number {
+    background-color: #088395;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.component-title {
+    color: #088395;
+    font-size: 1.3rem;
+}
+
+.step-image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px 0 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Base Layout */
+body {
+    background-color: #0b5e6a;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    margin: 0;
+}

@@ -1,0 +1,553 @@
+/* --- Global Variables based on your Color Scheme --- */
+:root {
+    --bg-color: #09637E;       /* Deep Teal/Blue */
+    --header-btn: #088395;     /* Vibrant Teal */
+    --btn-color: #7AB2B2;      /* Muted Blue-Grey */
+    --text-color: #EBF4F6;     /* Off-White */
+    --container-bg: #0a5c70;   /* Slightly lighter teal for container */
+    --border-color: #cccccc;   /* Light Grey */
+}
+
+/* --- General Reset --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Carousel Styling */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Table Styling */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.data-table th, .data-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.data-table th { background: #0b5e6a; color: white; }
+
+/* Form Styling */
+.tech-form .form-group { margin-bottom: 15px; }
+.tech-form input, .tech-form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.submit-btn {
+    background: #088395;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+.main-footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    margin-top: 50px;
+}
+.footer-grid {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main-footer ul { list-style: none; padding: 0; }
+.main-footer a { color: #088395; text-decoration: none; }
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+/* Darken Card Headings for visibility */
+.guide-card h2 {
+    color: #0b5e6a; /* Matches your background teal for a professional look */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+    border-bottom: 2px solid #088395;
+    padding-bottom: 10px;
+}
+
+/* Darken standard text inside the card */
+.guide-card p, .step-list li p {
+    color: #2c3e50; /* Deep navy/grey for better readability */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Make component titles bold and dark */
+.step-list li strong {
+    color: #088395;
+    font-size: 1.3rem;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Ensure the subtitle on the teal background stays bright */
+.subtitle {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+/* --- Header --- */
+.header {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.find-fix-btn {
+    background-color: var(--header-btn);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.find-fix-btn:hover {
+    filter: brightness(1.1);
+}
+
+/* --- Main Container (Rounded Rect with Light Grey Border) --- */
+.container {
+    background-color: var(--container-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* --- Our Services Title --- */
+.services-title {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--btn-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* --- Main Buttons (PC HELP & TOOLS) --- */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.service-btn {
+    background-color: var(--btn-color);
+    color: white;
+    border: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.service-btn i {
+    font-size: 3rem;
+}
+
+.service-btn:hover {
+    transform: translateY(-5px);
+    background-color: #8BC1BC;
+}
+
+/* --- Info Grid --- */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+}
+
+.info-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info-card h3 {
+    border-bottom: 1px solid var(--btn-color);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.info-card ul {
+    list-style-type: none;
+}
+
+.info-card li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.info-card li::before {
+    content: "•";
+    color: var(--btn-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* --- Footer --- */
+.footer {
+    margin-top: 30px;
+}
+
+.contact-btn {
+    background-color: var(--header-btn);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- Mobile Responsive --- */
+@media (max-width: 600px) {
+    .btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-btn {
+        width: 100%;
+    }
+}
+
+
+/* 1. Style the anchor tag to behave like a block */
+.service-link {
+    text-decoration: none; /* Removes the link underline */
+    color: inherit; /* Inherits text color from body */
+    display: block;
+    margin-bottom: 20px; /* Space between items */
+}
+
+/* 2. Style the actual box (The Context) */
+.service-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border: 2px solid var(--btn-color);          /* Uses your teal border color */
+    border-radius: 15px;                         /* Rounded corners */
+    padding: 20px;
+    display: flex;                               /* Aligns icon and text side-by-side */
+    align-items: center;
+    gap: 20px;                                   /* Space between icon and text */
+    transition: all 0.3s ease;                   /* Smooth hover effect */
+}
+
+/* 3. Hover Effect */
+.service-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Gets slightly brighter on hover */
+    transform: translateY(-3px);                 /* Moves up slightly */
+    cursor: pointer;
+}
+
+/* 4. Style the Icon */
+.service-item i {
+    font-size: 2.5rem;
+    color: var(--btn-color);                     /* Uses your button color */
+    min-width: 50px;                             /* Keeps icons aligned */
+    text-align: center;
+}
+
+/* 5. Style the Text inside */
+.service-text {
+    text-align: left;
+}
+
+.service-text h3 {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.service-text p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+
+.home-btn {
+background-color: #333333;
+color: #ffffff;
+border: none;
+padding: 8px 16px;
+border-radius: 4px;
+text-decoration: none;
+display: inline-block;
+}
+
+
+
+
+/* --- Global Variables based on your Color Scheme --- */
+:root {
+    --bg-color: #09637E;       /* Deep Teal/Blue */
+    --header-btn: #088395;     /* Vibrant Teal */
+    --btn-color: #7AB2B2;      /* Muted Blue-Grey */
+    --text-color: #EBF4F6;     /* Off-White */
+    --container-bg: #0a5c70;   /* Slightly lighter teal for container */
+    --border-color: #cccccc;   /* Light Grey */
+}
+
+/* --- General Reset --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- Layout Containers --- */
+.header {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between; /* Aligns Home button to left */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: var(--container-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+/* --- Home Button Style --- */
+.home-btn {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.home-btn:hover {
+    background-color: #555;
+}
+
+/* --- Guide Cards Section --- */
+.guides-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: left;
+}
+
+/* The Card Container */
+/* 1. Ensure the card aligns text to the left for better reading */
+.guide-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px 40px; /* Adjusted padding */
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left; /* Critical: Fixes the weird vertical spacing */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* 2. Reset the list styling to prevent stacking */
+.step-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.step-list li {
+    position: relative;
+    padding-left: 50px; /* Space for the circle number */
+    margin-bottom: 25px; /* Tighten space between steps */
+}
+
+/* 3. Style the Title and Paragraph to stay on the same line/block */
+.step-list strong {
+    display: block;
+    font-size: 1.15rem;
+    color: #09637E;
+    margin-bottom: 5px;
+}
+
+.step-list p {
+    color: #333333;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 1rem;
+    display: block; /* Ensures paragraph flows normally */
+}
+
+/* 4. Fix the circle numbers location */
+.step-list li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: #088395;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+/* 5. Keep the code snippets compact */
+.code-snippet {
+    background-color: #1a1a1a;
+    color: #00d4ff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .header {
+        justify-content: center;
+    }
+    
+    .home-btn {
+        display: none; /* Optional: hide home button on very small screens or adjust layout */
+    }
+    
+    h1 { 
+        font-size: 1.8rem; 
+    }
+    
+    .guide-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+
+
+/* --- Variables & Reset --- */
+:root {
+    --bg-color: #09637E;
+    --header-btn: #088395;
+    --btn-color: #7AB2B2;
+    --text-color: #EBF4F6;
+    --container-bg: #0a5c70;
+    --border-color: #cccccc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe';
+}
+
+
+/* Specifically target the text inside the sub-list items */
+.sub-list li {
+    color: #1a1a1a !important; /* Forces a very dark grey/black */
+    font-weight: 500;           /* Adds slight thickness for better legibility */
+    margin-bottom: 8px;         /* Adds a little breathing room */
+}
+
+/* Ensure the bold labels stay distinct */
+.sub-list li strong {
+    color: #09637E !important;  /* Keeps your primary teal for the label */
+    display: inline-block;
+    margin-right: 5px;
+}

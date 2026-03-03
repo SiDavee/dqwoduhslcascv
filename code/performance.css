@@ -1,0 +1,386 @@
+/* Navigation Header */
+
+.main-nav {
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+/* Universal Reset - Removes margins and fixes side spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0b5e6a;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling - Adds 40px padding for consistent spacing */
+.main-nav {
+    width: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 40px; /* Restores consistent space on left and right */
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Back Button - Restores High-Contrast Teal Design */
+/* 1. Default State: Grey background to match image_64027c */
+.home-btn-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #333333 !important; /* Standard Grey */
+    color: #ffffff !important;
+    text-decoration: none !important;
+    padding: 0 30px;
+    height: 100%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    border: none;
+}
+
+/* 2. Hover State: Turns to Teal when hovered */
+.home-btn-nav:hover {
+    background-color: #088395 !important; /* Teal Color */
+    cursor: pointer;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.logo-text span { color: #088395; }
+
+.nav-links a {
+    color: #bbb !important;
+    text-decoration: none !important;
+    font-size: 0.9rem;
+    margin-left: 25px;
+}
+
+.nav-links a:hover {
+    color: #088395 !important;
+}
+
+/* Content Container */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.header-group {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Card Styling */
+.guide-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: left;
+    color: #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    max-width: 850px;
+    width: 100%;
+}
+
+.guide-card::before {
+    content: "PRO-DIAGNOSTIC";
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background: #088395;
+    color: white;
+    padding: 5px 40px;
+    font-size: 10px;
+    font-weight: bold;
+    transform: rotate(45deg);
+}
+
+.step-list {
+    list-style: none;
+    counter-reset: step-counter;
+}
+
+.step-list li {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 50px;
+}
+
+.step-list li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0; 
+    top: 0;
+    width: 35px; height: 35px;
+    background: #088395;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.step-image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.code-snippet {
+    background: #f4f4f4;
+    padding: 2px 6px;
+    font-family: monospace;
+    color: #d63384;
+}
+
+/* Footer Styling */
+.main-footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 50px 20px 20px 20px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-section h3 { color: #088395; margin-bottom: 20px; }
+.footer-section ul { list-style: none; }
+.footer-section a { color: #bbb; text-decoration: none; }
+.footer-bottom { text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px; font-size: 0.85rem; color: #666; }
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    height: 100%;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.2s;
+    border-right: 1px solid #444;
+}
+
+.back-link:hover {
+    background-color: #088395;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.logo-text span {
+    color: #088395;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #088395;
+}
+.header {
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.home-btn {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s ease;
+}
+
+.home-btn:hover {
+    background-color: #444;
+}
+
+/* Guide Card Styling */
+.guide-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: left;
+    color: #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Diagonal Label */
+.guide-card::before {
+    content: "PRO-DIAGNOSTIC";
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background: #088395;
+    color: white;
+    padding: 5px 40px;
+    font-size: 10px;
+    font-weight: bold;
+    transform: rotate(45deg);
+}
+
+/* Step List Alignment */
+.step-list {
+    list-style: none;
+    counter-reset: step-counter;
+    padding: 0;
+}
+
+.step-list li {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 50px;
+}
+
+/* Step Number Circles */
+.step-list li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0; 
+    top: 0;
+    width: 35px; 
+    height: 35px;
+    background: #088395;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+/* Update the Card to handle its internal space better */
+.guide-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: left;
+    color: #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden; /* This clips any content that tries to leak out */
+    max-width: 850px;
+    width: 95%; /* Responsive width */
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+/* Update the Image to be fully responsive */
+.step-image {
+    display: block;
+    /* Use percentage to ensure it never exceeds the card's inner width */
+    width: 100%;       
+    /* Set a desktop limit so it doesn't get TOO huge */
+    max-width: 500px;  
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    /* Prevents the image from pushing past its parent container */
+    box-sizing: border-box; 
+}
+/* Background Grid (Same as Error Codes) */
+body {
+    background-color: #0b5e6a;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
